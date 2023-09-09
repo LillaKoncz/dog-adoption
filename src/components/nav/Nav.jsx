@@ -7,9 +7,9 @@ export const Nav = () => {
     <>
     <nav>
      <ul>
-        <li className='links'><Link to='/'>HOME</Link></li>
-        <li className='links'><Link to='/about'>ABOUT</Link></li>
-        <li className='links'><Link to='/contact'>CONTACT</Link></li>
+        <li className='links'><Link to='/dog-adoption/'>HOME</Link></li>
+        <li className='links'><Link to='/dog-adoption/about'>ABOUT</Link></li>
+        <li className='links'><Link to='/dog-adoption/contact'>CONTACT</Link></li>
      </ul>
     </nav>
     </>

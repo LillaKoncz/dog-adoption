@@ -9,13 +9,13 @@ export const Doggies = (props) => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate(`/dogdetails/${id}`)
+    navigate(`/dog-adoption/dogdetails/${id}`)
   }
   
   return (
    <>
   <div className='container'>
-    <div onClick={handleClick} className='img'><img className='dog-image' src={image} /></div>
+    <div onClick={handleClick} className='img'><img  className='dog-image' src={image} /></div>
   </div>
 
   {/* A nev hoverrel kell hogy megjelenjen*/}

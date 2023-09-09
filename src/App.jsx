@@ -14,10 +14,10 @@ function App() {
     <Router>
       <Nav/>
       <Routes>
-        <Route path='/' element={<Adopt/>}/>
-        <Route path='/about' element={<About/>} />
-        <Route path='/contact' element={<Contact/>}/>
-        <Route path='/dogdetails/:id' element={<Dogdetails/>}/>
+        <Route path='/dog-adoption/' element={<Adopt/>}/>
+        <Route path='/dog-adoption/about' element={<About/>} />
+        <Route path='/dog-adoption/contact' element={<Contact/>}/>
+        <Route path='/dog-adoption/dogdetails/:id' element={<Dogdetails/>}/>
       </Routes>
     </Router>
 
