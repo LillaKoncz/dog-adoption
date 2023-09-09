@@ -12,7 +12,7 @@ import {About} from '../about/About'
     </div>
 
     <div className='doggies'>{DOGS.map((dog) => (
-      <Doggies data={dog}/>
+      <Doggies key={dog.id} data={dog}/>
     ))}</div>
     </>
   )
