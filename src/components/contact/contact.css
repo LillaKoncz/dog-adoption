@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+:root{
+    --current-date-background:rgb(80, 146, 118);
+    --box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    --default-background:rgb(156, 156, 156);
+    --free-choose-dates-background: rgb(62, 155, 85);
+    --free-choose-dates-hover:rgb(101, 226, 133);
+}
+
+
+.calendar-instuctions{
+    margin-top:12vh;
+}
+
+
+.calendar-instuctions h3{
+    font-family:'Architects Daughter';
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.dates{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.date-title{
+    font-family: 'Architects Daughter';
+    font-weight: bold;
+    color:var(--current-date-background);
+}
+
+.date-item{
+   width:100px;
+   height:100px;
+   font-size: 1.5rem;
+   border-radius: 8px;
+   vertical-align: middle;
+   text-align: center;
+   padding-top:30px;
+   font-family: 'Architects Daughter';
+   margin:8px;
+
+}
+
+.current-date{
+    background-color: var(--current-date-background);
+    color:white;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid rgb(49, 49, 49);
+    box-shadow: var(--box-shadow);
+    
+}
+
+.past-dates{
+    background-color: rgb(156, 156, 156);
+    cursor: default;
+    
+}
+
+.free-choose-dates{
+    background-color: rgb(62, 155, 85);
+    cursor: pointer;
+    color:white;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.free-choose-dates:hover{
+    background-color:  var(--free-choose-dates-hover);
+}
+
+/*HOURS DESIGN---------------------------------------------------------------------*/
+
+.time-title{
+    color:var(--current-date-background);
+    font-family: 'Architects Daughter';
+    font-weight: bold;
+}
+
+.times-box{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.time{
+    width:100px;
+    height:70px;
+    background-color: var(--free-choose-dates-background);
+    margin:20px;
+    text-align: center;
+    border-radius: 10px;
+    color:white;
+    padding-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor:pointer;
+    box-shadow: var(--box-shadow);
+}
+
+.time:hover{
+    background-color:  var(--free-choose-dates-hover);
+}
+
+
+/*  TEXT FOR PICKED DAY AND TIME */
+
+.picked-datas{
+    text-transform:uppercase;
+    letter-spacing: 3px;
+    font-family: 'Architects Daughter';
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+
+/* BUTTON --------------*/
+
+.button-container{
+    display: flex;
+    
+}
+
+.book-button{
+    width:500px;
+    height:70px;
+    border-radius: 10px;
+    background-color: rgba(32, 104, 70, 0.872);
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    font-family: 'Architects Daughter';
+    color:white;
+    box-shadow: var(--box-shadow);
+}
+
+.book-button:hover{
+    background-color:rgba(56, 206, 136, 0.872); 
+}
+
+
+
+/* MEDIA QUERIES --------------------------------------------------------------*/
+
+@media screen and (max-width:910px){
+    .calendar-instuctions h3{
+        font-size:1.2rem;
+    }
+
+    .date-title{
+        font-size:1.6rem;
+    }
+
+
+    .date-item{
+        width:70px;
+        height:70px;
+        font-size: 1.2rem;
+        padding-top:20px;
+     }
+}
+
+
+@media screen and (max-width:728px){
+    .calendar-instuctions h3{
+        font-size:1rem;
+        margin-top:2rem;
+    }
+
+    .date-title{
+        font-size:1.3rem;
+    }
+}
+
+
+@media screen and (max-width:630px){
+   
+    .date-title{
+        font-size:1.2rem;
+    }
+
+    .date-item{
+        width:50px;
+        height:50px;
+        font-size: 1rem;
+        padding-top:15px;
+     }
+
+
+}
+
+
+@media screen and (max-width:450px){
+   .date-item{
+    width:40px;
+    height: 40px;
+    padding-top:10px;
+   } 
+}
+
+
+@media screen and (max-width:400px){
+    .date-item{
+        width:30px;
+        height: 30px;
+        padding-top:7px;
+        font-size: 0.8rem;
+       } 
+}

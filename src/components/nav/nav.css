@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+:root{
+    --menuHover:rgb(183, 147, 92);
+}
+
+.link-list{
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+}
+
+.link{
+    padding:1rem;
+   text-decoration: none;
+   color:rgb(45, 45, 45);
+   letter-spacing: 2px;
+   font-family: 'Architects Daughter';
+   font-weight:bold;
+
+}
+
+.link:hover{
+    color:var(--menuHover);
+}

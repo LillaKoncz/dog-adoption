@@ -3,6 +3,7 @@ import'./dog.css'
 import { useNavigate } from 'react-router-dom';
 
 
+
 export const Doggies = (props) => {
   const {id, name, age, breed, image} = props.data;
   
@@ -14,13 +15,14 @@ export const Doggies = (props) => {
   
   return (
    <>
-  <div className='container'>
-    <div onClick={handleClick} className='img'><img  className='dog-image' src={image} /></div>
-  </div>
-
-  {/* A nev hoverrel kell hogy megjelenjen*/}
-    {/* az osszes kep linkkent mukodik es a kutyak profiljara visz. 
-    Ehhez kell majd a Dogprofil componens*/}
+   <div className='wrapper-doggies m-4'>
+    <div onClick={handleClick} className='img'>
+      <img  className='dog-image' src={image} />
+      <div className='dog-name'>
+        <h6 className='text'>{name}</h6>
+        </div>
+      </div>
+    </div>
    </>
   )
 }

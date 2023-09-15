@@ -1,12 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+
+:root{
+    --menuHover:rgb(183, 147, 92);
+}
+
+/*Adopt jsx and Doggies jsx rules-----------------*/
+
+.title{
+    text-align: center;
+    color:rgb(129, 117, 117);
+    text-transform: uppercase;
+    font-family:sans-serif;
+}
+
+.title h1{
+    font-size: 6rem;
+    letter-spacing: 4px;
+    padding-top:5rem;
+    margin-top:4rem;
+    font-family: 'Architects Daughter';
+    font-weight:bold;
+}
+
+.title p{
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    padding-top:1rem;
+    font-family: 'Architects Daughter';
+    font-weight: bold;
+}
+
+.paw{
+    padding-top:3rem;
+    font-size: 5rem;
+}
+
 .img{
+    position: relative;
+    text-align: center;
+}
+
+
+.doggies{
+    margin-bottom:6rem;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
-
-
 .dog-image{
-    width:450px;
-    height:300px;
-    margin:10px;
+    width:300px;
+    height:200px;
     cursor:pointer;
+    border-radius: 10px; 
 }
+
+.dog-name{
+    opacity: 0;
+    position: absolute;
+    top:0px;
+    left:0px;
+    border-radius: 10px;
+    transition: all 300ms ease-out;
+    width:300px;
+    height:200px;
+    background-color: rgba(0, 0, 0, 0.388);
+    cursor: pointer;
+    font-family: 'Architects Daughter';
+    
+}
+
+.text{
+    color:whitesmoke;
+    letter-spacing: 2px;
+    font-size:2rem;
+    text-align: center;
+    margin-top:69px;
+    font-weight: bold;
+}
+
+
+.dog-name:hover{
+    opacity: 1;
+}
+
+
+/* MEDIA QUERIES------------------------------------------*/
+
+
+
+@media screen and (max-width:850px){
+.title h1{
+    font-size:4rem;
+}
+
+.title p{
+    font-size: 0.8rem;
+}
+}
+
+
+
+@media screen and (max-width:650px){
+    .title h1{
+        font-size:3rem;
+    }
+    
+    .title p{
+        font-size: 0.8rem;
+    }
+
+    .paw{
+        font-size:4rem;
+        padding-top:2rem;
+    }
+    }
+
+
+    @media screen and (max-width:450px){
+        .title h1{
+            font-size:2.5rem;
+        }
+        
+
+    
+        .paw{
+            font-size:3.5rem;
+        }
+        }
+    
+
+
+
+
+
