@@ -7,7 +7,8 @@
 
 /*Adopt jsx and Doggies jsx rules-----------------*/
 
-.title{
+.title,
+.addressen{
     text-align: center;
     color:rgb(129, 117, 117);
     text-transform: uppercase;
@@ -86,6 +87,18 @@
 }
 
 
+.addressen{
+    margin-bottom: 5rem;
+}
+
+.addressen p{
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    font-family: 'Architects Daughter';
+    font-weight: bold;
+    text-align: center;
+}
+
 /* MEDIA QUERIES------------------------------------------*/
 
 
@@ -95,7 +108,9 @@
     font-size:4rem;
 }
 
-.title p{
+
+.title p,
+.addressen p{
     font-size: 0.8rem;
 }
 }
@@ -107,7 +122,8 @@
         font-size:3rem;
     }
     
-    .title p{
+    .title p, 
+    .addressen p{
         font-size: 0.8rem;
     }
 

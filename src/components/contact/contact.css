@@ -73,37 +73,35 @@
 
 /*HOURS DESIGN---------------------------------------------------------------------*/
 
-.time-title{
-    color:var(--current-date-background);
-    font-family: 'Architects Daughter';
-    font-weight: bold;
-}
-
 .times-box{
     display: flex;
     flex-wrap: wrap;
 }
 
-.time{
+
+.time-item{
     width:100px;
     height:70px;
-    background-color: var(--free-choose-dates-background);
-    margin:20px;
+    background-color:var(--free-choose-dates-background);
     text-align: center;
+    padding-top:20px;
+    margin:20px;
     border-radius: 10px;
     color:white;
-    padding-top: 20px;
-    font-size: 1.2rem;
     font-weight: bold;
     letter-spacing: 1px;
-    cursor:pointer;
+    font-size: 1.1rem;
     box-shadow: var(--box-shadow);
-}
+    }
 
-.time:hover{
-    background-color:  var(--free-choose-dates-hover);
-}
+    .time-item:hover{
+        background-color: var(--free-choose-dates-hover);
+        cursor: pointer;
+    }
 
+    .selected{
+        background-color: rgb(153, 12, 2);
+    }
 
 /*  TEXT FOR PICKED DAY AND TIME */
 
@@ -113,6 +111,10 @@
     font-family: 'Architects Daughter';
     font-weight: bold;
     font-size: 2rem;
+}
+
+.icon{
+    padding-left:8px;
 }
 
 
@@ -139,6 +141,17 @@
     background-color:rgba(56, 206, 136, 0.872); 
 }
 
+.booked{
+    font-family: 'Architects Daughter';
+    margin-left:100px;
+    
+}
+
+.booked h2{
+    font-size: 2.5rem;
+   color:var(--current-date-background);
+}
+
 
 
 /* MEDIA QUERIES --------------------------------------------------------------*/
@@ -159,6 +172,25 @@
         font-size: 1.2rem;
         padding-top:20px;
      }
+
+     /* TIMES-------*/
+
+     .time-item{
+        width:70px;
+        height:40px;
+        padding-top:8px;
+        font-size: 1rem;
+     }
+
+     /*PICKED DATAS -----*/
+
+     .picked-datas{
+        font-size: 1.6rem;
+    
+     }
+
+
+
 }
 
 
@@ -171,13 +203,32 @@
     .date-title{
         font-size:1.3rem;
     }
+
+    .time-item{
+        font-size: 0.9rem;
+    }
+
+         /*PICKED DATAS -----*/
+
+         .picked-datas{
+            font-size: 1.3rem;
+        
+         }
+
+         /*BUTTON*/
+
+         .book-button{
+            font-size: 1.3rem;
+            width:450px;
+         }
+    
 }
 
 
 @media screen and (max-width:630px){
    
     .date-title{
-        font-size:1.2rem;
+        font-size:1.4rem;
     }
 
     .date-item{
@@ -187,16 +238,43 @@
         padding-top:15px;
      }
 
+     .book-button{
+        width:400px;
+        margin:0;
+     }
 
+
+     .picked-datas{
+        font-size: 1.3rem;
+     }
 }
 
 
 @media screen and (max-width:450px){
-   .date-item{
+   .calendar-instuctions{
+    margin-top:5vh;
+   }
+   
+   
+    .date-item{
     width:40px;
     height: 40px;
     padding-top:10px;
    } 
+
+   .time-item{
+    width:55px;
+    font-size:0.7rem;
+    padding-top:10px;
+    margin:10px;
+   }
+
+   .picked-datas{
+    font-size: 1.1rem;
+   }
+   .icon{
+    padding-left: 3px;
+   }
 }
 
 
@@ -207,4 +285,9 @@
         padding-top:7px;
         font-size: 0.8rem;
        } 
+
+       .book-button{
+        width:250px;
+       }
+      
 }

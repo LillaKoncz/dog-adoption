@@ -37,3 +37,118 @@
     font-weight: bold;
     letter-spacing: 2px;
 }
+
+/*MEDIA QUERIES ----*/
+
+@media screen and (max-width:1850px){
+    .selected-button{
+        width:180px;
+    }
+}
+
+
+@media screen and (max-width:1600px){
+    .data-box{
+      flex-direction: column;
+    }
+    .selected-img{
+        width:700px;
+        height:462px;
+    }
+    .selected-button{
+        width:300px;
+    }
+    
+}
+
+@media screen and (max-width:800px){
+    .selected-img{
+        width:500px;
+        height:330px;
+    }  
+    
+.selected-name{
+    font-size:2.8rem;
+    letter-spacing: 1px;
+}
+
+.selected-description,
+.selected-age,
+.selected-breed{
+    font-size: 1rem;
+}
+
+.selected-button{
+    width:250px;
+    height:65px;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+}
+
+@media screen and (max-width:650px){
+    .selected-button{
+        width:180px;    
+    }
+}
+
+@media screen and (max-width:615px){
+    .selected-img{
+        width:400px;
+        height:266px;
+    }  
+}
+
+
+@media screen and (max-width:515px){
+    .selected-img{
+        width:300px;
+        height:200px;
+    }  
+
+    .selected-name{
+        font-size: 2rem;
+    }
+
+    .selected-button{
+        width:250px;
+    }
+}
+
+@media screen and (max-width:615px){
+    .selected-img{
+        width:400px;
+        height:266px;
+    }  
+}
+
+
+@media screen and (max-width:515px){
+    .selected-img{
+        width:300px;
+        height:200px;
+    } 
+    
+    .selected-description{
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (max-width:415px){
+    .selected-img{
+        width:250px;
+        height:166px;
+    } 
+    
+    .selected-description{
+        font-size: 1rem;
+    }
+
+    .selected-button{
+        width:200px;
+    }
+}
+
+

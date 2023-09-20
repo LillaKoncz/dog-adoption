@@ -27,7 +27,7 @@ export const Dogdetails = () => {
              <p className='selected-age mx-5'><span className='bold'>Age:</span> {selectedDog.age} years</p>
               <p className='selected-description mx-5'>{selectedDog.description}</p>
               <button onClick={() => navigate('/dog-adoption/contact')} className=' selected-button btn btn-success m-5'>Get to know {selectedDog.name}!</button>
-              <button onClick={() => navigate('/dog-adoption/')} className=' selected-button btn btn-primary mx-3'>Back</button>
+              <button onClick={() => navigate('/dog-adoption/')} className=' selected-button btn btn-primary mx-5 button-back'>Back</button>
         </div>
         </div>
       </div>
